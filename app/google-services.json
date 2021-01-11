@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "27822975306",
+    "project_id": "ltxc-7a110",
+    "storage_bucket": "ltxc-7a110.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27822975306:android:cb98ae9699ddb11ca339b3",
+        "android_client_info": {
+          "package_name": "com.example.ltxc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "27822975306-7bhfbh32e46qt0u8q8lj3ptpueqs7hbk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ltxc",
+            "certificate_hash": "5da0c4897206bb5f671c914ff94e9aaae5c30126"
+          }
+        },
+        {
+          "client_id": "27822975306-hn8ifgf0abm6kpbsrc00cr49nt27qrre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqPSAU9ZIyjnGOgzG13dS9JYGoQ2VL8e8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "27822975306-hn8ifgf0abm6kpbsrc00cr49nt27qrre.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
