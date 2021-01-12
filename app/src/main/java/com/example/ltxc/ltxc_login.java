@@ -25,6 +25,7 @@ public class ltxc_login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(ltxc_login.this,Register.class);
                 startActivity(intent);
+                //mm
             }
         });
     }
