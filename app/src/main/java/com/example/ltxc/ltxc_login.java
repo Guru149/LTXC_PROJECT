@@ -32,7 +32,7 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 public class ltxc_login extends AppCompatActivity {
-    private static final int RC_SIGN_IN = 149;
+    private static final int RC_SIGN_IN = 9001;
     TextView gotoregister;
     EditText inpemail, inppassword;
     Button loginbtn;
@@ -56,7 +56,9 @@ public class ltxc_login extends AppCompatActivity {
                 .build();
    mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 signInButton=findViewById(R.id.sign_in_button);
-signInButton.setOnClickListener(new View.OnClickListener() {
+        Auth = FirebaseAuth.getInstance();
+
+        signInButton.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
         signIn();
