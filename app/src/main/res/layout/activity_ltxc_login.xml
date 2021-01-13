@@ -148,21 +148,19 @@ android:background="@drawable/cornercurve"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
-        <ImageView
-            android:id="@+id/googleLogin"
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/google"
-            android:contentDescription="google_icon" />
+
+            android:layout_height="40dp" />
 
         <ImageView
             android:id="@+id/facebookLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            app:srcCompat="@drawable/facebook"
-            android:contentDescription="facebook_icon" />
+            android:contentDescription="facebook_icon"
+            app:srcCompat="@drawable/facebook" />
     </LinearLayout>
 
     <TextView

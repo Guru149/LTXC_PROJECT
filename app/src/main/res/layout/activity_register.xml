@@ -109,23 +109,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
 
-    <EditText
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/confirmpassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/round_border"
-        android:drawableStart="@drawable/ic_lock"
-        android:drawablePadding="16dp"
-        android:ems="10"
-        android:hint="Confirm Password"
-        android:inputType="textPassword"
-        android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
 
     <Button
         android:layout_marginLeft="20dp"
@@ -142,6 +126,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/confirmpassword" />
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

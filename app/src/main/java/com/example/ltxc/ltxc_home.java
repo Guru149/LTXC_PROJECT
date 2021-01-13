@@ -3,6 +3,7 @@ package com.example.ltxc;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
@@ -14,6 +15,9 @@ import android.view.ViewGroup;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.constants.ScaleTypes;
 import com.denzcoskun.imageslider.models.SlideModel;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
@@ -34,6 +38,18 @@ public class ltxc_home extends Fragment {
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),ltxc_login.class);
                 startActivity(intent);
+            }
+        });
+
+        YouTubePlayerView youTubePlayerView = root.findViewById(R.id.youtube_player_view);
+        getLifecycle().addObserver(youTubePlayerView);
+
+        youTubePlayerView.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+            @Override
+            public void onReady(@NonNull YouTubePlayer youTubePlayer)
+            {
+                String videoId = "BSIaibnbPM0";
+                youTubePlayer.loadVideo(videoId, 0);
             }
         });
 
